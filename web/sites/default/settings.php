@@ -91,6 +91,7 @@
 $databases = [];
 
 // Database configuration from environment variables
+print_r($_ENV);
 $databases['default']['default'] = [
   'database' => $_ENV['DB_NAME'],
   'username' => $_ENV['DB_USER'],
