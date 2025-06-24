@@ -1,0 +1,133 @@
+# Drupal core - ignore the entire core directory
+web/core/
+
+# Vendor directory (Composer dependencies)
+vendor/
+
+# User-generated content and files
+web/sites/*/files/
+web/sites/*/private/
+
+# Configuration and sensitive files
+web/sites/*/settings.local.php
+web/sites/*/services.local.yml
+.env
+.env.local
+
+# Drupal's default files
+web/sites/default/default.settings.php
+web/sites/default/default.services.yml
+
+# Database dumps
+*.sql
+*.mysql
+*.dump
+
+# Development and build tools
+node_modules/
+npm-debug.log
+yarn-error.log
+.sass-cache/
+*.css.map
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary and cache files
+tmp/
+temp/
+.tmp/
+*.tmp
+*.cache
+
+# Log files
+*.log
+logs/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Composer
+composer.phar
+
+# Drush
+drush/contrib/
+
+# Local development - actually I do not mind if this gets comitted
+# .ddev/
+# .lando/
+# docker-compose.override.yml
+
+# Testing
+phpunit.xml
+.phpunit.result.cache
+
+# Build artifacts
+build/
+dist/
+
+# Drupal console
+/.console/
+
+# DrupalVM
+.vagrant/
+
+# Behat/Mink
+behat.local.yml
+
+# Common Drupal ignored paths
+web/sites/simpletest/
+web/sites/default/files/
+web/sites/default/private/
+web/modules/README.txt
+web/profiles/README.txt
+web/themes/README.txt
+web/INSTALL.txt
+web/LICENSE.txt
+web/README.txt
+web/web.config
+
+# Local configuration files that might contain sensitive data
+web/sites/*/settings.local.php
+web/sites/*/services.local.yml
+
+# Ignore paths that may contain user-generated content
+web/sites/*/files/
+web/sites/*/private/
+
+# Ignore paths that may contain temporary files
+web/sites/*/translations/
+web/sites/*/tmp/
+web/sites/*/cache/
+
+# Ignore Drupal's default files
+web/INSTALL.txt
+web/LICENSE.txt
+web/README.txt
+web/autoload.php
+web/index.php
+web/update.php
+web/robots.txt
+web/.ht.router.php
+web/.htaccess
+
+# Configuration sync directory (if using config sync)
+# Uncomment if you want to ignore config
+# config/sync/
