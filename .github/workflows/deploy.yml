@@ -24,6 +24,15 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v3
+      - name: Create deployment package
+        run: |
+          zip -r deploy.zip . \
+            -x "*.git*" \
+            -x "node_modules/*" \
+            -x "tests/*" \
+            -x ".github/*" \
+            -x "*.md"
+          ls -la deploy.zip
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
@@ -32,5 +41,5 @@ jobs:
           application_name: "Weightvest Running"
           environment_name: "WeightvestRunning-env"
           version_label: ${{ github.sha }}
-          region: us-east-1
+          region: us-east-2
           deployment_package: deploy.zip
