@@ -91,6 +91,7 @@
 $databases = [];
 
 // Database configuration from environment variables
+$_ENV['PHP_DISPLAY_ERRORS'] = 'On';
 print_r($_ENV);
 $databases['default']['default'] = [
   'database' => $_ENV['DB_NAME'],
