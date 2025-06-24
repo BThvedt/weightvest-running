@@ -90,6 +90,18 @@
  */
 $databases = [];
 
+// Database configuration from environment variables
+$databases['default']['default'] = [
+  'database' => $_ENV['DB_NAME'],
+  'username' => $_ENV['DB_USER'],
+  'password' => $_ENV['DB_PASS'],
+  'prefix' => '',
+  'host' => $_ENV['DB_HOST'],
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+];
+
 /**
  * Customizing database settings.
  *
@@ -265,7 +277,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = $_ENV['DRUPAL_HASH_SALT'];
 
 /**
  * Deployment identifier.
