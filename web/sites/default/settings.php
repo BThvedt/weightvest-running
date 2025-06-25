@@ -92,11 +92,11 @@ $databases = [];
 
 // Database configuration from environment variables
 $databases['default']['default'] = [
-  'database' => $_ENV['DB_NAME'],
-  'username' => $_ENV['DB_USER'],
-  'password' => $_ENV['DB_PASS'],
+  'database' => getenv('DB_NAME'),
+  'username' => getenv('DB_USER'),
+  'password' => getenv('DB_PASS'),
   'prefix' => '',
-  'host' => $_ENV['DB_HOST'],
+  'host' => getenv('DB_HOST'),
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
