@@ -877,3 +877,11 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+
+// Force base URL if needed
+$base_url = 'http://' . $_SERVER['HTTP_HOST'];
+
+// Enable clean URLs
+$settings['clean_url'] = TRUE;
+
