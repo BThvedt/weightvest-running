@@ -1,0 +1,10 @@
+name: S3 File System generic read-only streamWrapper (not using s3fs code)
+description: Adds a read-only streamWrapper to test the s3fs module works with the rest of the Drupal Ecosystem.
+type: module
+package: Testing
+
+
+# Information added by Drupal.org packaging script on 2025-06-23
+version: '8.x-3.8'
+project: 's3fs'
+datestamp: 1750648160

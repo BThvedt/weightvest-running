@@ -277,7 +277,8 @@ $databases['default']['default'] = [
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = $_ENV['DRUPAL_HASH_SALT'];
+$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT')
+  ?: 'replace_with_a_random_64-character_string';
 
 /**
  * Deployment identifier.
@@ -877,3 +878,21 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+// s3 filesystem setup 
+// S3FS Configuration
+if (getenv('IS_DDEV_PROJECT') != true) {
+  $settings['s3fs.settings'] = [
+    'bucket' => 'elasticbeanstalk-us-east-2-788196685427',
+    'region' => 'us-east-2',
+    'use_instance_profile' => TRUE,
+    'no_rewrite_cssjs' => FALSE,
+  ];
+  
+  // Use S3 for public files
+  $settings['file_public_path'] = 's3://public';
+  
+  // Optional: Use S3 for private files too
+  // $settings['file_private_path'] = 's3://private';
+}
+

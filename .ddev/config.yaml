@@ -9,9 +9,13 @@ additional_fqdns: []
 database:
   type: mariadb
   version: "10.6"
+upload_dirs:
+  - web/sites/default/files
 use_dns_when_possible: true
 composer_version: "2"
-web_environment: []
+web_environment:
+  - COMPOSER_PROCESS_TIMEOUT=0```
+  - COMPOSER_MEMORY_LIMIT=-1
 default_container_timeout: "240"
 # Key features of DDEV's config.yaml:
 

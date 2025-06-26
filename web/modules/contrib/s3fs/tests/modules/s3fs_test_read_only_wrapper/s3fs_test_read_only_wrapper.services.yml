@@ -1,0 +1,5 @@
+services:
+  stream_wrapper.test_read_only:
+    class: Drupal\s3fs_test_read_only_wrapper\StreamWrapper\ReadOnlyStreamWrapper
+    tags:
+      - { name: stream_wrapper, scheme: dummy-read-only }

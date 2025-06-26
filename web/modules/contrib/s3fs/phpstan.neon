@@ -1,0 +1,22 @@
+parameters:
+	fileExtensions:
+	    - php
+	    - module
+	    - install
+	paths:
+		- ./
+	excludePaths:
+		- src/EventSubscriber/S3fsAdvAggSubscriber.php
+		- web
+		- vendor
+		- expand_composer_json.php
+		- symlink_project.php
+	level: 9
+	ignoreErrors:
+		- '#Unsafe usage of new static\(\)#'
+		- identifier: missingType.iterableValue
+	checkMissingIterableValueType: True
+	scanDirectories:
+		- ../../../../vendor/drush/drush/src-symfony-compatibility
+includes:
+	- phpstan-baseline.neon

@@ -1,0 +1,1564 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Function s3fs_fix_table_indexes\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_install\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_requirements\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_requirements\\(\\) has parameter \\$phase with no type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_schema\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_update_8301\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_update_8302\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_update_8303\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function is_file expects string, mixed given\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function is_readable expects string, mixed given\\.$#"
+			count: 1
+			path: s3fs.install
+
+		-
+			message: "#^Parameter \\#1 \\$object_or_class of function is_subclass_of expects object\\|string, bool\\|string given\\.$#"
+			count: 2
+			path: s3fs.install
+
+		-
+			message: "#^Function s3fs_post_update_add_credentials_cache_default\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_add_default_disable_cert_verify\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_add_default_domain_root\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_add_disable_shared_config_files\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_add_disable_version_sync_default\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_add_read_only_default\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_delete_access_config\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_delete_no_rewrite_cssjs_setting\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_keymodule_config\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_migrate_hostname_setting_format\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Function s3fs_post_update_migrate_instance_profile_settings\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: s3fs.post_update.php
+
+		-
+			message: "#^Parameter \\#1 \\$uri of method Drupal\\\\Core\\\\File\\\\FileUrlGeneratorInterface\\:\\:generateAbsoluteString\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Asset/S3fsCssOptimizer.php
+
+		-
+			message: "#^Parameter \\#2 \\$replacement of function preg_replace expects array\\|string, mixed given\\.$#"
+			count: 1
+			path: src/Asset/S3fsCssOptimizer.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function preg_replace expects array\\|string, string\\|null given\\.$#"
+			count: 1
+			path: src/Asset/S3fsCssOptimizer.php
+
+		-
+			message: "#^Argument of an invalid type array\\<int, string\\>\\|false supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Call to an undefined method Drupal\\\\Core\\\\File\\\\MimeType\\\\MimeTypeGuesser\\:\\:guess\\(\\)\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Cannot access offset 'results' on array\\|DrushBatchContext\\.$#"
+			count: 7
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:copyOperation\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:execute\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:finished\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:isFileAlreadyUploaded\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:isFileAlreadyUploaded\\(\\) has parameter \\$destUri with no type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:isFileAlreadyUploaded\\(\\) has parameter \\$srcPath with no type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:updateProgress\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Parameter \\#1 \\$dir of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:dirScan\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Parameter \\$context of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:copyOperation\\(\\) has invalid type DrushBatchContext\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Parameter \\$context of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:getCopyOperationMessage\\(\\) has invalid type DrushBatchContext\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Parameter \\$context of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:updateProgress\\(\\) has invalid type DrushBatchContext\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Unsafe call to private method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:getCopyOperationMessage\\(\\) through static\\:\\:\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Unsafe call to private method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:getElapsedTimeFormatted\\(\\) through static\\:\\:\\.$#"
+			count: 2
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Unsafe call to private method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:isFileAlreadyUploaded\\(\\) through static\\:\\:\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatchInterface\\:\\:copyOperation\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatchInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatchInterface\\:\\:execute\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatchInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatchInterface\\:\\:finished\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatchInterface.php
+
+		-
+			message: "#^Parameter \\$context of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatchInterface\\:\\:copyOperation\\(\\) has invalid type DrushBatchContext\\.$#"
+			count: 1
+			path: src/Batch/S3fsFileMigrationBatchInterface.php
+
+		-
+			message: "#^Cannot access offset 'results' on array\\|DrushBatchContext\\.$#"
+			count: 2
+			path: src/Batch/S3fsRefreshCacheBatch.php
+
+		-
+			message: "#^Cannot call method fetchField\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatch\\:\\:execute\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatch\\:\\:finished\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatch\\:\\:refreshCacheOperation\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatch.php
+
+		-
+			message: "#^Parameter \\$context of method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatch\\:\\:refreshCacheOperation\\(\\) has invalid type DrushBatchContext\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatch.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatchInterface\\:\\:execute\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatchInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatchInterface\\:\\:finished\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatchInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatchInterface\\:\\:refreshCacheOperation\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatchInterface.php
+
+		-
+			message: "#^Parameter \\$context of method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatchInterface\\:\\:refreshCacheOperation\\(\\) has invalid type DrushBatchContext\\.$#"
+			count: 1
+			path: src/Batch/S3fsRefreshCacheBatchInterface.php
+
+		-
+			message: "#^Cannot call method waitUntilFileExists\\(\\) on bool\\|Drupal\\\\Core\\\\StreamWrapper\\\\StreamWrapperInterface\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Offset 'dirname' does not exist on array\\{dirname\\?\\: string, basename\\: string, extension\\?\\: string, filename\\: string\\}\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Parameter \\#1 \\$path of function pathinfo expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function ltrim expects string, bool\\|float\\|int\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Parameter \\#2 \\$haystack of function in_array expects array, mixed given\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Parameter \\#2 \\$user_string of function hash_equals expects string, bool\\|float\\|int\\|string\\|null given\\.$#"
+			count: 2
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Variable \\$image_style in empty\\(\\) always exists and is not falsy\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Variable \\$lock_name might not be defined\\.$#"
+			count: 1
+			path: src/Controller/S3fsImageStyleDownloadController.php
+
+		-
+			message: "#^Cannot call method error\\(\\) on Drush\\\\Log\\\\DrushLoggerManager\\|null\\.$#"
+			count: 2
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Cannot call method notice\\(\\) on Drush\\\\Log\\\\DrushLoggerManager\\|null\\.$#"
+			count: 3
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Cannot call method warning\\(\\) on Drush\\\\Log\\\\DrushLoggerManager\\|null\\.$#"
+			count: 3
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Drush\\\\Commands\\\\S3fsDrushCommands\\:\\:copyLocal\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Drush\\\\Commands\\\\S3fsDrushCommands\\:\\:refreshCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Parameter \\#1 \\$config of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatchInterface\\:\\:execute\\(\\) expects array, mixed given\\.$#"
+			count: 2
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Parameter \\#1 \\$config of method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatchInterface\\:\\:execute\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Parameter \\#1 \\$config of method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:validate\\(\\) expects array, mixed given\\.$#"
+			count: 2
+			path: src/Drush/Commands/S3fsDrushCommands.php
+
+		-
+			message: "#^Cannot access offset 'config' on mixed\\.$#"
+			count: 2
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Cannot access offset 'credentials_cache…' on mixed\\.$#"
+			count: 3
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Cannot access offset 'scheme' on mixed\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Cannot access offset 'use_credentials…' on mixed\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:copyLocalSubmitForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:copyLocalValidateForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:credentialsCacheSubmitForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:credentialsCacheValidateForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:refreshCacheSubmitForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:refreshCacheValidateForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:submitForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:validateConfigSubmitForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\ActionsForm\\:\\:validateConfigValidateForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Offset '\\#name' does not exist on array\\|null\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Parameter \\#1 \\$config of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:execute\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Parameter \\#1 \\$config of method Drupal\\\\s3fs\\\\Batch\\\\S3fsRefreshCacheBatch\\:\\:execute\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Parameter \\#1 \\$config of method Drupal\\\\s3fs\\\\S3fsService\\:\\:validate\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Parameter \\#2 \\$scheme of method Drupal\\\\s3fs\\\\Batch\\\\S3fsFileMigrationBatch\\:\\:execute\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^\\\\Drupal calls should be avoided in classes, use dependency injection instead$#"
+			count: 10
+			path: src/Form/ActionsForm.php
+
+		-
+			message: "#^Cannot access offset 'directory' on mixed\\.$#"
+			count: 1
+			path: src/Form/SettingsForm.php
+
+		-
+			message: "#^Cannot access offset 'twig' on mixed\\.$#"
+			count: 1
+			path: src/Form/SettingsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\SettingsForm\\:\\:create\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/SettingsForm.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Form\\\\SettingsForm\\:\\:submitForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Form/SettingsForm.php
+
+		-
+			message: "#^Parameter \\#1 \\$haystack of function substr_count expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/PathProcessor/S3fsPathProcessorImageStyles.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/PathProcessor/S3fsPathProcessorImageStyles.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Routing\\\\S3fsAlterCoreImageStyleRoutesSubscriber\\:\\:alterRoutes\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Routing/S3fsAlterCoreImageStyleRoutesSubscriber.php
+
+		-
+			message: "#^Parameter \\#1 \\$object_or_class of function is_a expects object\\|string, string\\|null given\\.$#"
+			count: 1
+			path: src/Routing/S3fsAlterCoreImageStyleRoutesSubscriber.php
+
+		-
+			message: "#^Parameter \\#1 \\$path of class Symfony\\\\Component\\\\Routing\\\\Route constructor expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Routing/S3fsAlterCoreImageStyleRoutesSubscriber.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\Routing\\\\S3fsImageStyleRoutes\\:\\:create\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Routing/S3fsImageStyleRoutes.php
+
+		-
+			message: "#^Call to method guess\\(\\) on an unknown class Symfony\\\\Component\\\\HttpFoundation\\\\File\\\\MimeType\\\\MimeTypeGuesserInterface\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Call to method guessMimeType\\(\\) on an unknown class Symfony\\\\Component\\\\HttpFoundation\\\\File\\\\MimeType\\\\MimeTypeGuesserInterface\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot access offset 'bucket' on mixed\\.$#"
+			count: 3
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot access offset 'cache_control_header' on mixed\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot access offset 'encryption' on mixed\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot access offset 'private_folder' on mixed\\.$#"
+			count: 3
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot access offset 'public_folder' on mixed\\.$#"
+			count: 3
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot access offset 'root_folder' on mixed\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot call method writeUriToCache\\(\\) on bool\\|Drupal\\\\Core\\\\StreamWrapper\\\\StreamWrapperInterface\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:basename\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:basename\\(\\) has parameter \\$suffix with no type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:basename\\(\\) has parameter \\$uri with no type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:delete\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:deleteRecursive\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:prepareDestination\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:preventCrossSchemeAccess\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:uriScheme\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:uriScheme\\(\\) has parameter \\$uri with no type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:validScheme\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:validScheme\\(\\) has parameter \\$scheme with no type specified\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#1 \\$config of method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:getAmazonS3Client\\(\\) expects array, mixed given\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function file_put_contents expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#1 \\$object_or_class of function is_a expects object, bool\\|Drupal\\\\Core\\\\StreamWrapper\\\\StreamWrapperInterface given\\.$#"
+			count: 3
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#1 \\$source of method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:move\\(\\) expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, mixed given\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|null given\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#1 \\$uri of method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:realpath\\(\\) expects string, string\\|true given\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Parameter \\#3 \\$replace of method Drupal\\\\s3fs\\\\S3fsFileService\\:\\:prepareDestination\\(\\) expects int, Drupal\\\\Core\\\\File\\\\FileExists\\|int given\\.$#"
+			count: 2
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\S3fsFileService\\:\\:\\$mimeGuesser \\(Symfony\\\\Component\\\\HttpFoundation\\\\File\\\\MimeType\\\\MimeTypeGuesserInterface\\|Symfony\\\\Component\\\\Mime\\\\MimeTypesInterface\\) does not accept object\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\S3fsFileService\\:\\:\\$mimeGuesser has unknown class Symfony\\\\Component\\\\HttpFoundation\\\\File\\\\MimeType\\\\MimeTypeGuesserInterface as its type\\.$#"
+			count: 1
+			path: src/S3fsFileService.php
+
+		-
+			message: "#^Cannot access offset 'private_folder' on mixed\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Cannot access offset 'public_folder' on mixed\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileSystemD103\\:\\:basename\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileSystemD103\\:\\:basename\\(\\) has parameter \\$suffix with no type specified\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileSystemD103\\:\\:basename\\(\\) has parameter \\$uri with no type specified\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileSystemD103\\:\\:delete\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileSystemD103\\:\\:deleteRecursive\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsFileSystemD103\\:\\:preventCrossSchemeAccess\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, mixed given\\.$#"
+			count: 2
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|null given\\.$#"
+			count: 2
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/S3fsFileSystemD103.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 2
+			path: src/S3fsService.php
+
+		-
+			message: "#^Cannot call method fetchCol\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^If condition is always true\\.$#"
+			count: 2
+			path: src/S3fsService.php
+
+		-
+			message: "#^Instantiated class Doctrine\\\\Common\\\\Cache\\\\FilesystemCache not found\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:getAmazonS3Client\\(\\) should return Aws\\\\S3\\\\S3Client but returns mixed\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:getExistingFolders\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:getObjectMetadata\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:refreshCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:setTables\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:setupTempTable\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:writeFolders\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsService\\:\\:writeTemporaryMetadata\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Parameter \\#1 \\$cache of class Aws\\\\DoctrineCacheAdapter constructor expects Doctrine\\\\Common\\\\Cache\\\\Cache, Doctrine\\\\Common\\\\Cache\\\\FilesystemCache given\\.$#"
+			count: 1
+			path: src/S3fsService.php
+
+		-
+			message: "#^Parameter \\#3 \\$s3_metadata of method Drupal\\\\s3fs\\\\S3fsService\\:\\:getObjectMetadata\\(\\) expects array, mixed given\\.$#"
+			count: 2
+			path: src/S3fsService.php
+
+		-
+			message: "#^Variable \\$s3 might not be defined\\.$#"
+			count: 7
+			path: src/S3fsService.php
+
+		-
+			message: "#^\\\\Drupal calls should be avoided in classes, use dependency injection instead$#"
+			count: 16
+			path: src/S3fsService.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:getExistingFolders\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:getObjectMetadata\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:refreshCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:setTables\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:setupTempTable\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:writeFolders\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceInterface\\:\\:writeTemporaryMetadata\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceInterface.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceProvider\\:\\:alter\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceProvider.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\S3fsServiceProvider\\:\\:register\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/S3fsServiceProvider.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, bool\\|string given\\.$#"
+			count: 1
+			path: src/StreamWrapper/PrivateS3fsStream.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Call to an undefined method Drupal\\\\Core\\\\File\\\\MimeType\\\\MimeTypeGuesser\\:\\:guess\\(\\)\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Call to an undefined method Psr\\\\Http\\\\Message\\\\UriInterface\\:\\:withQueryValue\\(\\)\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Call to an undefined method Psr\\\\Http\\\\Message\\\\UriInterface\\:\\:withQueryValues\\(\\)\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'cname' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'config' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'dir' on non\\-empty\\-array\\|true\\.$#"
+			count: 2
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'presignedURLs' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'private_folder' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'public_folder' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 's3' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 's3fs' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'saveas' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'torrents' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot access offset 'upload_as_private' on mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot call method fetchAssoc\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot call method fetchCol\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot call method fetchField\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Cannot call method getPathToken\\(\\) on Drupal\\\\image\\\\Entity\\\\ImageStyle\\|null\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Dead catch \\- Drupal\\\\s3fs\\\\S3fsException is never thrown in the try block\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^If condition is always true\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:deleteCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:getClient\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:getExternalUrl\\(\\) should return string but returns string\\|null\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:getS3Metadata\\(\\) should return array but returns false\\.$#"
+			count: 2
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:preventCrossSchemeAccess\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:readCache\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:setUri\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:url_stat\\(\\) should return array but returns array\\|bool\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:writeCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:writeUriToCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:writeUriToCache\\(\\) has parameter \\$uri with no type specified\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#1 \\$base_url of method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:appendGetArg\\(\\) expects string, string\\|null given\\.$#"
+			count: 3
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#1 \\$client of method Aws\\\\S3\\\\StreamWrapper\\:\\:register\\(\\) expects Aws\\\\S3\\\\S3ClientInterface, mixed given\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#1 \\$path of function dirname expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, mixed given\\.$#"
+			count: 2
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|null given\\.$#"
+			count: 2
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#2 \\$mode of method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:mkdir\\(\\) expects int, null given\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#2 \\$options \\(int\\) of method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:dir_opendir\\(\\) should be compatible with parameter \\$options \\(string\\) of method Aws\\\\S3\\\\StreamWrapper\\:\\:dir_opendir\\(\\)$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, bool\\|string given\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$cname \\(array\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$config \\(array\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$mode is unused\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$params is never read, only written\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$presignedURLs \\(array\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$s3 \\(Aws\\\\S3\\\\S3Client\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$s3fs \\(Drupal\\\\s3fs\\\\S3fsServiceInterface\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$saveas \\(array\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$torrents \\(array\\) does not accept mixed\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Property Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:\\$uploadAsPrivate \\(bool\\) does not accept mixed\\.$#"
+			count: 2
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Return type \\(bool\\) of method Drupal\\\\s3fs\\\\StreamWrapper\\\\S3fsStream\\:\\:realpath\\(\\) should be compatible with return type \\(string\\) of method Drupal\\\\Core\\\\StreamWrapper\\\\StreamWrapperInterface\\:\\:realpath\\(\\)$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Variable \\$itok might not be defined\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Variable \\$request in empty\\(\\) always exists and is not falsy\\.$#"
+			count: 1
+			path: src/StreamWrapper/S3fsStream.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsConfigFormTest\\:\\:testS3fsConfigurationForm\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsConfigFormTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$account of method Drupal\\\\Tests\\\\BrowserTestBase\\:\\:drupalLogin\\(\\) expects Drupal\\\\Core\\\\Session\\\\AccountInterface, Drupal\\\\user\\\\Entity\\\\User\\|false given\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsConfigFormTest.php
+
+		-
+			message: "#^Property Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsConfigFormTest\\:\\:\\$adminUser \\(Drupal\\\\user\\\\UserInterface\\) does not accept Drupal\\\\user\\\\Entity\\\\User\\|false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsConfigFormTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsConfigValidationTest\\:\\:testReadOnlySetting\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsConfigValidationTest.php
+
+		-
+			message: "#^Cannot call method fetchAll\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 3
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Cannot call method fetchAllAssoc\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 2
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsDrushTest\\:\\:testDrushCopyLocalBoth\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsDrushTest\\:\\:testDrushCopyLocalNewerFilesOnly\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsDrushTest\\:\\:testDrushCopyLocalPrivateOnly\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsDrushTest\\:\\:testDrushCopyLocalPublicOnly\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsDrushTest\\:\\:testDrushCopyLocalSizeDiffersOnly\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsDrushTest\\:\\:testDrushRefreshCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTestBase\\:\\:saveData\\(\\) expects string, string\\|false given\\.$#"
+			count: 4
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$mtime of function touch expects int\\|null, string given\\.$#"
+			count: 2
+			path: tests/src/Functional/S3fsDrushTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsFileServiceTest\\:\\:testCacheHeaders\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsFileServiceTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsFileServiceTest\\:\\:testFileService\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsFileServiceTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsImageStyleControllerLockdownTest\\:\\:testLockedDown\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsImageStyleControllerLockdownTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsImageStyleControllerLockdownTest\\:\\:testValidateS3fsStyleImageControllerOnlyServeS3fs\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsImageStyleControllerLockdownTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTestBase\\:\\:saveData\\(\\) expects string, string\\|false given\\.$#"
+			count: 2
+			path: tests/src/Functional/S3fsImageStyleControllerLockdownTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function getimagesize expects string, string\\|null given\\.$#"
+			count: 2
+			path: tests/src/Functional/S3fsImageStyleControllerLockdownTest.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertFalse\\(\\) with array will always evaluate to false\\.$#"
+			count: 3
+			path: tests/src/Functional/S3fsMetadataTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsMetadataTest\\:\\:testIgnoreCache\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsMetadataTest.php
+
+		-
+			message: "#^Call to function stat\\(\\) on a separate line has no effect\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertTrue\\(\\) with false and 'file_system move…' will always evaluate to false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertTrue\\(\\) with false and 'rename threw…' will always evaluate to false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertTrue\\(\\) with false and 'setUri threw…' will always evaluate to false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertTrue\\(\\) with false and 'stat threw exception' will always evaluate to false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertTrue\\(\\) with false and 'unlink threw…' will always evaluate to false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertTrue\\(\\) with false and 'writeUriToCache…' will always evaluate to false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Dead catch \\- Drupal\\\\s3fs\\\\Exceptions\\\\CrossSchemeAccessException is never thrown in the try block\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsStreamIsolationTest\\:\\:testDirectoriesAccess\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsStreamIsolationTest\\:\\:testDirectoryScan\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsStreamIsolationTest\\:\\:testSchemaExceptionsForFiles\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$stream of function fclose expects resource, resource\\|false given\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$haystack of method PHPUnit\\\\Framework\\\\Assert\\:\\:assertCount\\(\\) expects Countable\\|iterable, array\\<int, string\\>\\|false given\\.$#"
+			count: 2
+			path: tests/src/Functional/S3fsStreamIsolationTest.php
+
+		-
+			message: "#^Argument of an invalid type Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null supplied for foreach, only iterables are supported\\.$#"
+			count: 4
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Cannot call method buildUrl\\(\\) on Drupal\\\\image\\\\Entity\\\\ImageStyle\\|null\\.$#"
+			count: 3
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Cannot call method fetchAll\\(\\) on Drupal\\\\Core\\\\Database\\\\StatementInterface\\|null\\.$#"
+			count: 3
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Cannot call method getFileUri\\(\\) on Drupal\\\\file\\\\FileInterface\\|false\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTest\\:\\:cacheBatchExecute\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTest\\:\\:testCacheRefresh\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTest\\:\\:testConvertFileInRoot\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTest\\:\\:testImageDerivatives\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTest\\:\\:testStreamWrapperCoverage\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$data of method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTestBase\\:\\:saveData\\(\\) expects string, string\\|false given\\.$#"
+			count: 6
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$file of static method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTest\\:\\:fileDelete\\(\\) expects Drupal\\\\file\\\\FileInterface, Drupal\\\\file\\\\FileInterface\\|false given\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function file_exists expects string, string\\|null given\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$source of method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTestBase\\:\\:copyFile\\(\\) expects Drupal\\\\file\\\\FileInterface, Drupal\\\\file\\\\FileInterface\\|false given\\.$#"
+			count: 3
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$uri of method Drupal\\\\Core\\\\StreamWrapper\\\\StreamWrapperManager\\:\\:isValidUri\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTest.php
+
+		-
+			message: "#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTestBase.php
+
+		-
+			message: """
+				#^Call to deprecated method doesBucketExist\\(\\) of class Aws\\\\S3\\\\S3Client\\:
+				Use doesBucketExistV2\\(\\) instead$#
+			"""
+			count: 2
+			path: tests/src/Functional/S3fsTestBase.php
+
+		-
+			message: "#^Class Drupal\\\\s3fs\\\\S3fsService referenced with incorrect case\\: Drupal\\\\S3fs\\\\S3fsService\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTestBase.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTestBase\\:\\:prepareConfig\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTestBase.php
+
+		-
+			message: "#^PHPDoc type array of property Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsTestBase\\:\\:\\$modules is not covariant with PHPDoc type array\\<string\\> of overridden property Drupal\\\\Tests\\\\BrowserTestBase\\:\\:\\$modules\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsTestBase.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:runDomainRootTests\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:runTests\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testCustomEndpointWithPortUriGeneration\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testCustomHostname\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testCustomHostnameDifferentRegion\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testCustomHostnameWithPort\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testDefaultDifferentRegion\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testDefaultUriGeneration\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testGetExternalUrlNone\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testGetExternalUrlPublic\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testGetExternalUrlRoot\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testHttpsCustomHostname\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testHttpsDefaultUriGeneration\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testPathBasedEndpoint\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testPathBasedEndpointWithCustomHostname\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:testWithRootFolder\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Property Drupal\\\\Tests\\\\s3fs\\\\Functional\\\\S3fsUrlGenerationTest\\:\\:\\$config has no type specified\\.$#"
+			count: 1
+			path: tests/src/Functional/S3fsUrlGenerationTest.php
+
+		-
+			message: "#^Cannot access offset 'private_folder' on mixed\\.$#"
+			count: 1
+			path: tests/src/Kernel/S3fsPathsTraitTest.php
+
+		-
+			message: "#^Cannot access offset 'public_folder' on mixed\\.$#"
+			count: 1
+			path: tests/src/Kernel/S3fsPathsTraitTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Kernel\\\\S3fsPathsTraitTest\\:\\:preventCrossSchemeAccess\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Kernel/S3fsPathsTraitTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, mixed given\\.$#"
+			count: 2
+			path: tests/src/Kernel/S3fsPathsTraitTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|null given\\.$#"
+			count: 2
+			path: tests/src/Kernel/S3fsPathsTraitTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, bool\\|string given\\.$#"
+			count: 1
+			path: tests/src/Kernel/S3fsPathsTraitTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Unit\\\\S3fsCssOptimizerTest\\:\\:testRewriteUri\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsCssOptimizerTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Unit\\\\S3fsCssOptimizerTest\\:\\:testRewriteUriAlwaysHttps\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsCssOptimizerTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Unit\\\\S3fsCssOptimizerTest\\:\\:testRewriteUriCustomCssHost\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsCssOptimizerTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$file_url_generator of class Drupal\\\\s3fs\\\\Asset\\\\S3fsCssOptimizer constructor expects Drupal\\\\Core\\\\File\\\\FileUrlGeneratorInterface\\|null, Drupal\\\\Core\\\\File\\\\FileUrlGeneratorInterface\\|PHPUnit\\\\Framework\\\\MockObject\\\\MockObject given\\.$#"
+			count: 3
+			path: tests/src/Unit/S3fsCssOptimizerTest.php
+
+		-
+			message: "#^Cannot access offset 'private_folder' on mixed\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsPathsTraitsTest.php
+
+		-
+			message: "#^Cannot access offset 'public_folder' on mixed\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsPathsTraitsTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Unit\\\\S3fsPathsTraitsTest\\:\\:preventCrossSchemeAccess\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsPathsTraitsTest.php
+
+		-
+			message: "#^Method Drupal\\\\Tests\\\\s3fs\\\\Unit\\\\S3fsPathsTraitsTest\\:\\:testCrossSchemeAccessException\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsPathsTraitsTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, mixed given\\.$#"
+			count: 2
+			path: tests/src/Unit/S3fsPathsTraitsTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|null given\\.$#"
+			count: 2
+			path: tests/src/Unit/S3fsPathsTraitsTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, bool\\|string given\\.$#"
+			count: 1
+			path: tests/src/Unit/S3fsPathsTraitsTest.php
