@@ -881,18 +881,20 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 
 // s3 filesystem setup 
 // S3FS Configuration
-// if (getenv('IS_DDEV_PROJECT') != true) {
-//   $settings['s3fs.settings'] = [
-//     'bucket' => 'elasticbeanstalk-us-east-2-788196685427',
-//     'region' => 'us-east-2',
-//     'use_instance_profile' => TRUE,
-//     'no_rewrite_cssjs' => FALSE,
-//   ];
+if (getenv('IS_DDEV_PROJECT') != true) {
+  $settings['s3fs.settings'] = [
+    'bucket' => 'elasticbeanstalk-us-east-2-788196685427',
+    'region' => 'us-east-2',
+    'use_instance_profile' => TRUE,
+    'no_rewrite_cssjs' => FALSE,
+  ];
   
-//   // Use S3 for public files
-//   $settings['file_public_path'] = 's3://public';
+  // Use S3 for public files
+  $settings['file_public_path'] = 's3://public';
   
-//   // Optional: Use S3 for private files too
-//   // $settings['file_private_path'] = 's3://private';
-// }
+  // Optional: Use S3 for private files too
+  // $settings['file_private_path'] = 's3://private';
+}
 
+// config sync
+$settings['config_sync_directory'] = '../config/sync';
