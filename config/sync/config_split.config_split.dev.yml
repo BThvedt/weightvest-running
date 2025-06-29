@@ -1,0 +1,17 @@
+uuid: ceb0862d-8faa-4250-9c01-f1b18f2373e8
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/dev
+module:
+  s3fs: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

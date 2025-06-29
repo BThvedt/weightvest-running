@@ -20,6 +20,8 @@
     },
     "require": {
         "composer/installers": "^2.3",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/config_split": "^2.0",
         "drupal/core-composer-scaffold": "11.1.0",
         "drupal/core-project-message": "11.1.0",
         "drupal/core-recipe-unpack": "^11",

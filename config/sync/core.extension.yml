@@ -1,6 +1,7 @@
 _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
+  admin_toolbar: 0
   announcements_feed: 0
   automated_cron: 0
   big_pipe: 0
@@ -10,6 +11,7 @@ module:
   ckeditor5: 0
   comment: 0
   config: 0
+  config_split: 0
   contact: 0
   contextual: 0
   datetime: 0
@@ -32,7 +34,6 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
-  s3fs: 0
   search: 0
   shortcut: 0
   system: 0
