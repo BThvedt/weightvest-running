@@ -915,18 +915,26 @@ $is_local = (isset($_ENV['DDEV_PROJECT']) || isset($_ENV['IS_DDEV_PROJECT']));
 if ($is_local) {
   $config['config_split.config_split.dev']['status'] = TRUE;
   $config['config_split.config_split.prod']['status'] = FALSE;
+
+  $config['system.performance']['css']['preprocess'] = FALSE;
+  $config['system.performance']['js']['preprocess'] = FALSE;
+  $config['system.performance']['css']['gzip'] = FALSE;
+  $config['system.performance']['js']['gzip'] = FALSE;
+
 } else {
   $config['config_split.config_split.dev']['status'] = FALSE;
   $config['config_split.config_split.prod']['status'] = TRUE;
+
   if (isset($_ENV['S3FS_BUCKET'])) {
     $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
     $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
     $config['s3fs.settings']['use_https'] = TRUE;
 
-    // this should take care of the bucketname in the file uri's
-    $config['s3fs.settings']['use_customhost'] = TRUE;
-    $config['s3fs.settings']['hostname'] = 'files.weightvestrunning.com';
-    $config['s3fs.settings']['use_cname'] = TRUE;
+    // let's make sure css and JS are aggrigated.. 
+    $config['system.performance']['css']['preprocess'] = TRUE;
+    $config['system.performance']['js']['preprocess'] = TRUE;
+    $config['system.performance']['css']['gzip'] = TRUE;
+    $config['system.performance']['js']['gzip'] = TRUE;
     
     // Useing IAM role for the EB environment that already has permissions (no credentials needed)
     $settings['file_public_path'] = 's3://public';
