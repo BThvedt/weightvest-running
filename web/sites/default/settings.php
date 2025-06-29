@@ -920,8 +920,12 @@ $is_local = (isset($_ENV['DDEV_PROJECT']) || isset($_ENV['IS_DDEV_PROJECT']));
 
 if ($is_local) {
   print '<p>Local environment</p>';
+  $config['config_split.config_split.dev']['status'] = TRUE;
+  $config['config_split.config_split.prod']['status'] = FALSE;
 } else {
   print '<p>not local</p>';
+  $config['config_split.config_split.dev']['status'] = FALSE;
+  $config['config_split.config_split.prod']['status'] = TRUE;
   if (isset($_ENV['S3FS_BUCKET'])) {
     $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
     $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';

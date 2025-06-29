@@ -1,16 +1,17 @@
-uuid: ceb0862d-8faa-4250-9c01-f1b18f2373e8
+uuid: 9b42d20d-70f0-4045-8d50-fb5b821255e7
 langcode: en
 status: true
 dependencies: {  }
-id: dev
-label: Dev
+id: prod
+label: Prod
 description: ''
 weight: 0
 stackable: false
 no_patching: false
 storage: folder
-folder: ../config/dev
-module: {  }
+folder: ../config/prod
+module:
+  s3fs: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }
