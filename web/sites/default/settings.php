@@ -927,11 +927,15 @@ if ($is_local) {
   $config['config_split.config_split.dev']['status'] = FALSE;
   $config['config_split.config_split.prod']['status'] = TRUE;
   if (isset($_ENV['S3FS_BUCKET'])) {
+
+    print $_ENV['S3FS_BUCKET'];
+    print $_ENV['S3FS_REGION'];
+
     $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
     $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
     $config['s3fs.settings']['use_https'] = TRUE;
     
-    // Use IAM role on AWS (no credentials needed)
+    // Useing IAM role for the EB environment that already has permissions (no credentials needed)
     $settings['file_public_path'] = 's3://public';
     $settings['file_private_path'] = 's3://private';
   }
