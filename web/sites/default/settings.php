@@ -881,20 +881,54 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
 
 // s3 filesystem setup 
 // S3FS Configuration
-if (getenv('IS_DDEV_PROJECT') != true) {
-  $settings['s3fs.settings'] = [
-    'bucket' => 'elasticbeanstalk-us-east-2-788196685427',
-    'region' => 'us-east-2',
-    'use_instance_profile' => TRUE,
-    'no_rewrite_cssjs' => FALSE,
-  ];
-  
-  // Use S3 for public files
-  $settings['file_public_path'] = 's3://public';
-  
+// if (getenv('IS_DDEV_PROJECT') != true) {
+// $settings['s3fs.settings'] = [
+//   'bucket' => 'elasticbeanstalk-us-east-2-788196685427',
+//   'region' => 'us-east-2',
+//   'use_instance_profile' => TRUE,
+//   'no_rewrite_cssjs' => FALSE,
+// ];
+
+// // Use S3 for public files
+// $settings['file_public_path'] = 's3://public';
+
   // Optional: Use S3 for private files too
   // $settings['file_private_path'] = 's3://private';
-}
+// }
 
 // config sync
 $settings['config_sync_directory'] = '../config/sync';
+
+// now let's see if the s3fs module is enabled
+$config_dir = $settings['config_sync_directory'];
+$core_extension_file = $config_dir . '/core.extension.yml';
+
+if (file_exists($core_extension_file)) {
+  $yaml_content = file_get_contents($core_extension_file);
+  $yaml_parser = new \Symfony\Component\Yaml\Yaml();
+  $core_extension = $yaml_parser::parse($yaml_content);
+
+  if (isset($core_extension['module']['s3fs'])) {
+    print '<p>s3fs enabled</p>';
+  } else {
+    print '<p>s3fs not enabled</p>';
+  }
+}
+
+// local files 
+$is_local = (isset($_ENV['DDEV_PROJECT']) || isset($_ENV['IS_DDEV_PROJECT']));
+
+if ($is_local) {
+  print '<p>Local environment</p>';
+} else {
+  print '<p>not local</p>';
+  if (isset($_ENV['S3FS_BUCKET'])) {
+    $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
+    $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
+    $config['s3fs.settings']['use_https'] = TRUE;
+    
+    // Use IAM role on AWS (no credentials needed)
+    $settings['file_public_path'] = 's3://public';
+    $settings['file_private_path'] = 's3://private';
+  }
+}
