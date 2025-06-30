@@ -930,9 +930,11 @@ if ($is_local) {
   $config['config_split.config_split.prod']['status'] = TRUE;
 
   if (isset($_ENV['S3FS_BUCKET'])) {
-    $settings['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
-    $settings['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
-    $settings['s3fs.settings']['use_https'] = TRUE;
+    // Use config overrides instead of $settings
+    // Drush doesn't read from settings .. 
+    $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
+    $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
+    $config['s3fs.settings']['use_https'] = TRUE;
 
     // stuff sugggested in the s3fs readme..
     $settings['s3fs.use_s3_for_public'] = TRUE;
