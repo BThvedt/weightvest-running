@@ -912,6 +912,10 @@ $settings['config_sync_directory'] = '../config/sync';
 // local files 
 $is_local = (isset($_ENV['DDEV_PROJECT']) || isset($_ENV['IS_DDEV_PROJECT']));
 
+// stuff sugggested in the s3fs readme.. do not use the default directory for twig filew 
+// it poses a security consern if stored in s3
+$settings['php_storage']['twig']['directory'] = '../storage/php';
+
 if ($is_local) {
   $config['config_split.config_split.dev']['status'] = TRUE;
   $config['config_split.config_split.prod']['status'] = FALSE;
@@ -929,6 +933,10 @@ if ($is_local) {
     $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
     $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
     $config['s3fs.settings']['use_https'] = TRUE;
+
+    // stuff sugggested in the s3fs readme..
+    $settings['s3fs.use_s3_for_public'] = TRUE;
+    $settings['s3fs.use_s3_for_private'] = TRUE;
 
     // let's make sure css and JS are aggrigated.. 
     $config['system.performance']['css']['preprocess'] = TRUE;
