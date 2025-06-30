@@ -948,8 +948,8 @@ if ($is_local) {
     // Useing IAM role for the EB environment that already has permissions (no credentials needed)..
     $settings['s3fs.use_s3_for_public'] = TRUE;
     $settings['s3fs.use_s3_for_private'] = TRUE;
-    $settings['file_public_path'] = 's3://public';
-    $settings['file_private_path'] = 's3://private';
+    $settings['file_public_path'] = 'public://';
+    $settings['file_private_path'] = 'private://';
     // force usage of special stream wrappers 
     $settings['container_yamls'][] = __DIR__ . '/s3fs_override.yml';
     $settings['file_public_base_url'] = 'https://s3-us-east-2.amazonaws.com/weightvest-running-files/public';
