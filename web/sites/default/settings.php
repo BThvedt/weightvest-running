@@ -920,19 +920,19 @@ if ($is_local) {
   $config['config_split.config_split.dev']['status'] = TRUE;
   $config['config_split.config_split.prod']['status'] = FALSE;
 
-  $config['system.performance']['css']['preprocess'] = FALSE;
-  $config['system.performance']['js']['preprocess'] = FALSE;
-  $config['system.performance']['css']['gzip'] = FALSE;
-  $config['system.performance']['js']['gzip'] = FALSE;
+  // $config['system.performance']['css']['preprocess'] = FALSE;
+  // $config['system.performance']['js']['preprocess'] = FALSE;
+  // $config['system.performance']['css']['gzip'] = FALSE;
+  // $config['system.performance']['js']['gzip'] = FALSE;
 
 } else {
   $config['config_split.config_split.dev']['status'] = FALSE;
   $config['config_split.config_split.prod']['status'] = TRUE;
 
   if (isset($_ENV['S3FS_BUCKET'])) {
-    $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
-    $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
-    $config['s3fs.settings']['use_https'] = TRUE;
+    $settings['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
+    $settings['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
+    $settings['s3fs.settings']['use_https'] = TRUE;
 
     // stuff sugggested in the s3fs readme..
     $settings['s3fs.use_s3_for_public'] = TRUE;
