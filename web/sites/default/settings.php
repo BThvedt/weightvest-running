@@ -947,5 +947,7 @@ if ($is_local) {
     // Useing IAM role for the EB environment that already has permissions (no credentials needed)
     $settings['file_public_path'] = 's3://public';
     $settings['file_private_path'] = 's3://private';
+
+    $settings['container_yamls'][] = __DIR__ . '/s3fs_override.yml';
   }
 }
