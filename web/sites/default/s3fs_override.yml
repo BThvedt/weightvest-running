@@ -21,6 +21,5 @@ services:
     class: Drupal\s3fs\Asset\S3fsCssOptimizer
     arguments: ["@config.factory", "@file_url_generator"]
 
-  asset.js.dumper:
-    class: Drupal\s3fs\Asset\S3fsJsOptimizer
-    arguments: ["@config.factory", "@file_url_generator"]
+  # Keep the default JS dumper - S3FS might not have a separate JS optimizer
+  # Remove or comment out the JS dumper override for now
