@@ -936,9 +936,25 @@ if ($is_local) {
     $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
     $config['s3fs.settings']['use_https'] = TRUE;
 
+    // Debug: Let's also try getenv() as a fallback
+    if (empty($config['s3fs.settings']['bucket'])) {
+        $config['s3fs.settings']['bucket'] = getenv('S3FS_BUCKET');
+    }
+    if (empty($config['s3fs.settings']['region'])) {
+        $config['s3fs.settings']['region'] = getenv('S3FS_REGION') ?: 'us-east-2';
+    }
+
+    print '<p>' . $_ENV['S3FS_BUCKET'] . '</p>';
+    print '<p>' . $config['s3fs.settings']['bucket'] . '</p>';
+
     // stuff sugggested in the s3fs readme..
+    // Useing IAM role for the EB environment that already has permissions (no credentials needed)..
     $settings['s3fs.use_s3_for_public'] = TRUE;
     $settings['s3fs.use_s3_for_private'] = TRUE;
+    $settings['file_public_path'] = 's3://public';
+    $settings['file_private_path'] = 's3://private';
+    // force usage of special stream wrappers 
+    $settings['container_yamls'][] = __DIR__ . '/s3fs_override.yml';
 
     // let's make sure css and JS are aggrigated.. 
     $config['system.performance']['css']['preprocess'] = TRUE;
@@ -946,10 +962,5 @@ if ($is_local) {
     $config['system.performance']['css']['gzip'] = TRUE;
     $config['system.performance']['js']['gzip'] = TRUE;
     
-    // Useing IAM role for the EB environment that already has permissions (no credentials needed)
-    $settings['file_public_path'] = 's3://public';
-    $settings['file_private_path'] = 's3://private';
-
-    $settings['container_yamls'][] = __DIR__ . '/s3fs_override.yml';
   }
 }
