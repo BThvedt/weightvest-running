@@ -944,9 +944,6 @@ if ($is_local) {
         $config['s3fs.settings']['region'] = getenv('S3FS_REGION') ?: 'us-east-2';
     }
 
-    print '<p>' . $_ENV['S3FS_BUCKET'] . '</p>';
-    print '<p>' . $config['s3fs.settings']['bucket'] . '</p>';
-
     // stuff sugggested in the s3fs readme..
     // Useing IAM role for the EB environment that already has permissions (no credentials needed)..
     $settings['s3fs.use_s3_for_public'] = TRUE;
