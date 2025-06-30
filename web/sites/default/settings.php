@@ -952,6 +952,7 @@ if ($is_local) {
     $settings['file_private_path'] = 's3://private';
     // force usage of special stream wrappers 
     $settings['container_yamls'][] = __DIR__ . '/s3fs_override.yml';
+    $settings['file_public_base_url'] = 'https://s3-us-east-2.amazonaws.com/weightvest-running-files/public';
 
     // let's make sure css and JS are aggrigated.. 
     $config['system.performance']['css']['preprocess'] = TRUE;
