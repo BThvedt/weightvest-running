@@ -16,10 +16,9 @@ services:
     class: Drupal\s3fs\S3fsFileStorage
     arguments: ["@stream_wrapper_manager", "@file_system", "@kernel", "@lock"]
 
-  # Override CSS/JS asset dumper to use S3
+  # Override CSS asset dumper to use S3
   asset.css.dumper:
     class: Drupal\s3fs\Asset\S3fsCssOptimizer
     arguments: ["@config.factory", "@file_url_generator"]
 
-  # Keep the default JS dumper - S3FS might not have a separate JS optimizer
-  # Remove or comment out the JS dumper override for now
+  # S3FS doesn't provide a JS optimizer - the file storage override should handle JS files
