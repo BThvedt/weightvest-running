@@ -932,33 +932,33 @@ if ($is_local) {
   if (isset($_ENV['S3FS_BUCKET'])) {
     // Use config overrides instead of $settings
     // Drush doesn't read from settings .. 
-    $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
-    $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
-    $config['s3fs.settings']['use_https'] = TRUE;
+    // $config['s3fs.settings']['bucket'] = $_ENV['S3FS_BUCKET'];
+    // $config['s3fs.settings']['region'] = $_ENV['S3FS_REGION'] ?? 'us-east-2';
+    // $config['s3fs.settings']['use_https'] = TRUE;
 
-    // Debug: Let's also try getenv() as a fallback
-    if (empty($config['s3fs.settings']['bucket'])) {
-        $config['s3fs.settings']['bucket'] = getenv('S3FS_BUCKET');
-    }
-    if (empty($config['s3fs.settings']['region'])) {
-        $config['s3fs.settings']['region'] = getenv('S3FS_REGION') ?: 'us-east-2';
-    }
+    // // Debug: Let's also try getenv() as a fallback
+    // if (empty($config['s3fs.settings']['bucket'])) {
+    //     $config['s3fs.settings']['bucket'] = getenv('S3FS_BUCKET');
+    // }
+    // if (empty($config['s3fs.settings']['region'])) {
+    //     $config['s3fs.settings']['region'] = getenv('S3FS_REGION') ?: 'us-east-2';
+    // }
 
-    // stuff sugggested in the s3fs readme..
-    // Useing IAM role for the EB environment that already has permissions (no credentials needed)..
-    $settings['s3fs.use_s3_for_public'] = TRUE;
-    $settings['s3fs.use_s3_for_private'] = TRUE;
-    $settings['file_public_path'] = 'public://';
-    $settings['file_private_path'] = 'private://';
-    // force usage of special stream wrappers 
-    $settings['container_yamls'][] = __DIR__ . '/s3fs_override.yml';
-    $settings['file_public_base_url'] = 'https://s3-us-east-2.amazonaws.com/weightvest-running-files/public';
+    // // stuff sugggested in the s3fs readme..
+    // // Useing IAM role for the EB environment that already has permissions (no credentials needed)..
+    // $settings['s3fs.use_s3_for_public'] = TRUE;
+    // $settings['s3fs.use_s3_for_private'] = TRUE;
+    // $settings['file_public_path'] = 'public://';
+    // $settings['file_private_path'] = 'private://';
+    // // force usage of special stream wrappers 
+    // $settings['container_yamls'][] = __DIR__ . '/s3fs_override.yml';
+    // $settings['file_public_base_url'] = 'https://s3-us-east-2.amazonaws.com/weightvest-running-files/public';
 
-    // let's make sure css and JS are aggrigated.. 
-    $config['system.performance']['css']['preprocess'] = TRUE;
-    $config['system.performance']['js']['preprocess'] = TRUE;
-    $config['system.performance']['css']['gzip'] = TRUE;
-    $config['system.performance']['js']['gzip'] = TRUE;
+    // // let's make sure css and JS are aggrigated.. 
+    // $config['system.performance']['css']['preprocess'] = TRUE;
+    // $config['system.performance']['js']['preprocess'] = TRUE;
+    // $config['system.performance']['css']['gzip'] = TRUE;
+    // $config['system.performance']['js']['gzip'] = TRUE;
     
   }
 }
