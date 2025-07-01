@@ -10,8 +10,3 @@ services:
     class: Drupal\s3fs\StreamWrapper\S3fsStream
     tags:
       - { name: stream_wrapper, scheme: private }
-
-  # Override core file storage service - this should handle all file operations including CSS/JS
-  file.storage:
-    class: Drupal\s3fs\S3fsFileStorage
-    arguments: ["@stream_wrapper_manager", "@file_system", "@kernel", "@lock"]
