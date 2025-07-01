@@ -11,12 +11,7 @@ services:
     tags:
       - { name: stream_wrapper, scheme: private }
 
-  # Override core file storage service
+  # Override core file storage service - this should handle all file operations including CSS/JS
   file.storage:
     class: Drupal\s3fs\S3fsFileStorage
     arguments: ["@stream_wrapper_manager", "@file_system", "@kernel", "@lock"]
-
-  # Override CSS collection optimizer (not dumper!)
-  asset.css.collection_optimizer:
-    class: Drupal\s3fs\Asset\S3fsCssOptimizer
-    arguments: ["@config.factory", "@file_url_generator"]
